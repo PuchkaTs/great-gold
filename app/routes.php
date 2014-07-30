@@ -11,7 +11,22 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
+Route::get('/', ['as'   => 'home', 'uses' => 'PagesController@home']);
+Route::get('/about_us',function(){
+    return View::make('pages.about_us');
+});
+Route::get('/news',function(){
+    return View::make('pages.news');
+});
+Route::get('/services',function(){
+    return View::make('pages.services');
+});
+Route::get('/projects',function(){
+    return View::make('pages.projects');
+});
+Route::get('/career',function(){
+    return View::make('pages.career');
+});
+Route::get('/contact_us',function(){
+    return View::make('pages.contact_us');
 });

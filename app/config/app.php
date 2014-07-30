@@ -13,7 +13,7 @@ return array(
 	|
 	*/
 
-	'debug' => false,
+	'debug' => true,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -121,6 +121,12 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
+        'Way\Generators\GeneratorsServiceProvider',
+        'Laracasts\Commander\CommanderServiceProvider',
+        'Laracasts\Validation\ValidationServiceProvider',
+        'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
+        'Laravel\Cashier\CashierServiceProvider',
+        'Barryvdh\Elfinder\ElfinderServiceProvider',
 
 	),
 
