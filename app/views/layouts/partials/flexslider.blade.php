@@ -1,7 +1,7 @@
-@if(Menu::whereSlug(Request::path())->first()->banner->count())
+@if($banners)
 <div class="flexslider">
     <ul class="slides">
-            @foreach(Menu::whereSlug(Request::path())->first()->banner as $index => $banner)
+            @foreach($banners as $index => $banner)
                 <li>
                   {{ HTML::image("uploads/banner/$banner->image") }}
                 </li>

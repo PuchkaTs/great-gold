@@ -22,7 +22,7 @@ Route::get('/news', function ()
 });
 
 Route::get('/services/{service}', [
-    'as' => 'home',
+    'as' => 'service_path',
     'uses' => 'PagesController@service']
 );
 /**

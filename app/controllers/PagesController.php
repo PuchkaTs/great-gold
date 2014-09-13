@@ -2,6 +2,20 @@
 
 class PagesController extends \BaseController {
 
+    private $banners = false;
+    function __construct()
+    {
+
+        if (Menu::whereSlug(Request::path())->count())
+        {
+            $this->banners = Menu::whereSlug(Request::path())->first()->banner;
+        } else
+        {
+            $this->banners = false;
+        }
+    }
+
+
     /**
      * Display a listing of the resource.
      *
@@ -9,6 +23,7 @@ class PagesController extends \BaseController {
      */
     public function home()
     {
+        $banners = $this->banners;
         $howMany = Project::get()->count();
         if ($howMany > 4)
         {
@@ -30,7 +45,7 @@ class PagesController extends \BaseController {
             }
         }
 
-        return View::make('pages.home')->with(compact('body', 'header', 'projects'));
+        return View::make('pages.home')->with(compact('body', 'header', 'projects', 'banners'));
     }
 
     /**
@@ -38,9 +53,10 @@ class PagesController extends \BaseController {
      */
     public function service($service)
     {
-
+        $banners = $this->banners;
         $body = 'body goes here';
         $header = 'Header goes here';
+
         if (($content = Content::whereTag('Design')->first()) && ($service == 'design_service'))
         {
             if (app::getLocale() == 'en')
@@ -92,7 +108,8 @@ class PagesController extends \BaseController {
                 $header = $content->header_mn;
             }
         }
-        return View::make('pages.services.service')->with(compact('body', 'header'));
+
+        return View::make('pages.services.service')->with(compact('body', 'header', 'banners'));
     }
 
     /**
