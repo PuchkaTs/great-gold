@@ -1,4 +1,4 @@
-@if(Menu::whereSlug(Request::path())->first()->banner->count())
+@if(Menu::whereSlug(Request::path())->firstOrFail()->banner->count())
 <div class="flexslider">
     <ul class="slides">
             @foreach(Menu::whereSlug(Request::path())->first()->banner as $index => $banner)
