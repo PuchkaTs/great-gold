@@ -49,7 +49,17 @@ class PagesController extends \BaseController {
     }
 
     /**
-     * Design page
+     * Career
+     * @return mixed
+     */
+    public function career()
+    {
+        $banners = $this->banners;
+
+        return View::make('pages.career')->with(compact('banners'));
+    }
+    /**
+     * Serice page
      */
     public function service($service)
     {

@@ -49,10 +49,10 @@ Route::get('/news/{id}', [
     'uses' => 'PagesController@show_news_by_id'
 ]);
 
-Route::get('/career', function ()
-{
-    return View::make('pages.career');
-});
+Route::get('/career', [
+        'as' => 'career_path',
+        'uses' => 'PagesController@career']
+);
 
 Route::post('/contact_us', [
     'as'   => 'contact_path',
