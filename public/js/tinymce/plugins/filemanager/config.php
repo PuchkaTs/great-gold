@@ -20,7 +20,7 @@ $base_url='http://' . $_SERVER['HTTP_HOST']; //url base of site if you want only
 $upload_dir = '/uploads/'; // path from base_url to upload base dir
 $current_path = '../../../../uploads/'; // relative path from filemanager folder to upload files folder
 
-$MaxSizeUpload=100; //Mb
+$MaxSizeUpload=1; //Mb
 
 //**********************
 //Image config
@@ -29,14 +29,14 @@ $MaxSizeUpload=100; //Mb
 //If you set dimension limit, automatically the images that exceed this limit are convert to limit, instead
 //if the images are lower the dimension is maintained
 //if you don't have limit set both to 0
-$image_max_width=0;
-$image_max_height=0;
+$image_max_width=2000;
+$image_max_height=2000;
 
 //Automatic resizing //
 //If you set true $image_resizing the script convert all images uploaded in image_width x image_height resolution
 //If you set width or height to 0 the script calcolate automatically the other size
 $image_resizing=false;
-$image_width=600;
+$image_width=0;
 $image_height=0;
 
 //******************
