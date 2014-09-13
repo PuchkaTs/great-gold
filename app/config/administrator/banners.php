@@ -11,7 +11,7 @@ if (App::getLocale() == 'en')
     return array(
         'title'       => trans('administrator.bannerTitle'),
         'single'      => trans('administrator.bannerTitle'),
-        'model'       => 'banner',
+        'model'       => 'Banner',
         /**
          * The display columns
          */
@@ -91,7 +91,7 @@ if (App::getLocale() == 'en')
     return array(
         'title'       => trans('administrator.bannerTitle'),
         'single'      => trans('administrator.bannerTitle'),
-        'model'       => 'banner',
+        'model'       => 'Banner',
         /**
          * The display columns
          */

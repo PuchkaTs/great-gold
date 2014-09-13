@@ -7,7 +7,7 @@
 return array(
     'title' => trans('administrator.userTitle'),
     'single' => trans('administrator.userTitle'),
-    'model' => 'user',
+    'model' => 'User',
     /**
      * The display columns
      */

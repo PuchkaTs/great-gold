@@ -11,7 +11,7 @@ if (App::getLocale() == 'en')
     return array(
         'title'       => trans('administrator.menuTitle'),
         'single'      => trans('administrator.menuTitle'),
-        'model'       => 'menu',
+        'model'       => 'Menu',
         /**
          * The display columns
          */
@@ -69,7 +69,7 @@ if (App::getLocale() == 'en')
     return array(
         'title'       => trans('administrator.menuTitle'),
         'single'      => trans('administrator.menuTitle'),
-        'model'       => 'menu',
+        'model'       => 'Menu',
         /**
          * The display columns
          */

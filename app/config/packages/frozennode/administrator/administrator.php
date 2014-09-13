@@ -52,11 +52,11 @@ return array(
 	 *	)
 	 */
 	'menu' => array(
-//        'Manage'=>['roles', 'users'],
+        'Manage'=>['roles', 'users'],
         'contents',
-//        'menu',
-//        'banners',
-//        'Posts'=>['projects', 'images', 'tags'],
+        'menu',
+        'banners',
+        'Posts'=>['projects', 'images', 'tags'],
     ),
 
 	/**

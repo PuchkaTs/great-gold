@@ -11,7 +11,7 @@ if (App::getLocale() == 'en')
     return array(
         'title'       => trans('administrator.roleTitle'),
         'single'      => trans('administrator.roleTitle'),
-        'model'       => 'role',
+        'model'       => 'Role',
         /**
          * The display columns
          */
@@ -46,7 +46,7 @@ if (App::getLocale() == 'en')
     return array(
         'title'       => trans('administrator.roleTitle'),
         'single'      => trans('administrator.roleTitle'),
-        'model'       => 'role',
+        'model'       => 'Role',
         /**
          * The display columns
          */

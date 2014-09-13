@@ -11,7 +11,7 @@ if (App::getLocale() == 'en')
     return array(
         'title'       => trans('administrator.projectTitle'),
         'single'      => trans('administrator.projectTitle'),
-        'model'       => 'project',
+        'model'       => 'Project',
         /**
          * The display columns
          */
@@ -77,7 +77,7 @@ if (App::getLocale() == 'en')
     return array(
         'title'       => trans('administrator.projectTitle'),
         'single'      => trans('administrator.projectTitle'),
-        'model'       => 'project',
+        'model'       => 'Project',
         /**
          * The display columns
          */
