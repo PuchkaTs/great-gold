@@ -11,7 +11,7 @@ if (App::getLocale() == 'en')
     return array(
         'title'       => trans('administrator.contentTitle'),
         'single'      => trans('administrator.contentTitle'),
-        'model'       => 'Content',
+        'model'       => 'content',
         /**
          * The display columns
          */
