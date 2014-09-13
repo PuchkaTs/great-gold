@@ -28,7 +28,7 @@ if (App::getLocale() == 'en')
                 'output' => '<img src="/uploads/projects/(:value)" height="100" />',
             ),
             'project' => array(
-                'relationship' => 'project',
+                'relationship' => 'Project',
                 'title' => 'Belongs to a project',
                 'select' => '(:table).title_en', //what column or accessor on the other table you want to use to represent this object
             ),
@@ -110,7 +110,7 @@ if (App::getLocale() == 'en')
                 'output' => '<img src="/uploads/projects/(:value)" height="100" />',
             ),
             'project' => array(
-                'relationship' => 'project',
+                'relationship' => 'Project',
                 'title' => 'Belongs to a project',
                 'select' => '(:table).title_mn', //what column or accessor on the other table you want to use to represent this object
             ),

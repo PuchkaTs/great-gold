@@ -15,8 +15,8 @@ class CreateProjectTagsTable extends Migration {
 		Schema::create('tags', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->string('tag_en')->unique();
-			$table->string('tag_mn')->unique();
+			$table->string('tag_en');
+			$table->string('tag_mn');
 			$table->timestamps();
 		});
 	}
