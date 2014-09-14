@@ -27,7 +27,7 @@ if (App::getLocale() == 'en')
                 'title' => 'Image',
                 'output' => '<img src="/uploads/projects/(:value)" height="100" />',
             ),
-            'project' => array(
+            'Project' => array(
                 'relationship' => 'Project',
                 'title' => 'Belongs to a project',
                 'select' => '(:table).title_en', //what column or accessor on the other table you want to use to represent this object
