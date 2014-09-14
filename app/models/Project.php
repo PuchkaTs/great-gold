@@ -16,7 +16,7 @@ class Project extends Eloquent {
     }
 
     public function image(){
-        return $this->hasMany('image');
+        return $this->hasMany('Image');
     }
 
     public function tags()
