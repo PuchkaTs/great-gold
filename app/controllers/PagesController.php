@@ -9,7 +9,6 @@ class PagesController extends \BaseController {
         if (Menu::whereSlug(Request::path())->count())
         {
             $this->banners = Menu::whereSlug(Request::path())->first()->banner;
-            dd($this->banners);
         } else
         {
             $this->banners = false;

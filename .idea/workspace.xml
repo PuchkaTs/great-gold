@@ -5,6 +5,7 @@
       <change type="DELETED" beforePath="C:\Users\puje\great-gold\public\FAV.png" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\puje\great-gold\public\favicon.ico" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\puje\great-gold\public\logo.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/PagesController.php" afterPath="$PROJECT_DIR$/app/controllers/PagesController.php" />
     </list>
     <ignored path="great-gold.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -84,7 +85,7 @@
       <file leaf-file-name="PagesController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/PagesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="14" selection-start="311" selection-end="311" vertical-scroll-proportion="0.2579001" vertical-offset="83" max-vertical-offset="4788">
+            <state line="10" column="79" selection-start="264" selection-end="264" vertical-scroll-proportion="0.2008155" vertical-offset="83" max-vertical-offset="4760">
               <folding />
             </state>
           </provider>
@@ -170,8 +171,8 @@
         <option value="$PROJECT_DIR$/app/models/Image.php" />
         <option value="$PROJECT_DIR$/app/config/administrator/images.php" />
         <option value="$PROJECT_DIR$/app/models/Project.php" />
-        <option value="$PROJECT_DIR$/app/controllers/PagesController.php" />
         <option value="$PROJECT_DIR$/app/models/Menu.php" />
+        <option value="$PROJECT_DIR$/app/controllers/PagesController.php" />
       </list>
     </option>
   </component>
@@ -916,7 +917,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/PagesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="14" selection-start="311" selection-end="311" vertical-scroll-proportion="0.2579001" vertical-offset="83" max-vertical-offset="4788">
+        <state line="10" column="79" selection-start="264" selection-end="264" vertical-scroll-proportion="0.2008155" vertical-offset="83" max-vertical-offset="4760">
           <folding />
         </state>
       </provider>
