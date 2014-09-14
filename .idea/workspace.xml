@@ -5,7 +5,6 @@
       <change type="DELETED" beforePath="C:\Users\puje\great-gold\public\FAV.png" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\puje\great-gold\public\favicon.ico" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\puje\great-gold\public\logo.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/PagesController.php" afterPath="$PROJECT_DIR$/app/controllers/PagesController.php" />
     </list>
     <ignored path="great-gold.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -85,16 +84,7 @@
       <file leaf-file-name="PagesController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/PagesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="14" selection-start="279" selection-end="279" vertical-scroll-proportion="0.234375" vertical-offset="83" max-vertical-offset="4788">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2014_09_07_080032_create_banner_menu_table.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_09_07_080032_create_banner_menu_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1204">
+            <state line="12" column="14" selection-start="311" selection-end="311" vertical-scroll-proportion="0.2579001" vertical-offset="83" max-vertical-offset="4788">
               <folding />
             </state>
           </provider>
@@ -131,7 +121,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/pages/services/curtain_wall.blade.php" />
         <option value="$PROJECT_DIR$/app/views/pages/services/foundation.blade.php" />
         <option value="$PROJECT_DIR$/app/views/pages/services/structure.blade.php" />
         <option value="$PROJECT_DIR$/app/config/app.php" />
@@ -182,6 +171,7 @@
         <option value="$PROJECT_DIR$/app/config/administrator/images.php" />
         <option value="$PROJECT_DIR$/app/models/Project.php" />
         <option value="$PROJECT_DIR$/app/controllers/PagesController.php" />
+        <option value="$PROJECT_DIR$/app/models/Menu.php" />
       </list>
     </option>
   </component>
@@ -462,6 +452,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="great-gold" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="great-gold" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -782,13 +790,6 @@
         <state line="10" column="0" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0" vertical-offset="3" max-vertical-offset="1568" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Menu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="7" selection-start="123" selection-end="123" vertical-scroll-proportion="0.17125382" vertical-offset="0" max-vertical-offset="981">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/tag.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="0.028542304" vertical-offset="0" max-vertical-offset="981" />
@@ -906,9 +907,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="38" selection-start="357" selection-end="357" vertical-scroll-proportion="0.49583334" vertical-offset="0" max-vertical-offset="960">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/PagesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="14" selection-start="279" selection-end="279" vertical-scroll-proportion="0.234375" vertical-offset="83" max-vertical-offset="4788">
+        <state line="12" column="14" selection-start="311" selection-end="311" vertical-scroll-proportion="0.2579001" vertical-offset="83" max-vertical-offset="4788">
           <folding />
         </state>
       </provider>

@@ -16,7 +16,7 @@ class Menu extends Eloquent{
 
     public function banner()
     {
-        return $this->belongsToMany('banner');
+        return $this->belongsToMany('Banner');
     }
 
 }
