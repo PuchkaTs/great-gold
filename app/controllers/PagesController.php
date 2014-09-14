@@ -5,7 +5,7 @@ class PagesController extends \BaseController {
     private $banners = false;
     function __construct()
     {
-
+        dd(Request::path());
         if (Menu::whereSlug(Request::path())->count())
         {
             $this->banners = Menu::whereSlug(Request::path())->first()->banner;
