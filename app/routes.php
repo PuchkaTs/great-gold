@@ -10,7 +10,6 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
-
 Route::get('/', ['as' => 'home', 'uses' => 'PagesController@home']);
 Route::get('/about_us', function ()
 {
@@ -22,16 +21,18 @@ Route::get('/news', function ()
 });
 
 Route::get('/services/{service}', [
-    'as' => 'service_path',
-    'uses' => 'PagesController@service']
+        'as'   => 'service_path',
+        'uses' => 'PagesController@service']
 );
 /**
  * Projects
  */
 Route::get('/projects', [
-    'as'   => 'project_path',
+    'as'   => 'projects',
     'uses' => 'PagesController@show_projects'
 ]);
+
+
 Route::get('/projects/{id}', [
     'as'   => 'project_path',
     'uses' => 'PagesController@show_project_by_id'
@@ -50,7 +51,7 @@ Route::get('/news/{id}', [
 ]);
 
 Route::get('/career', [
-        'as' => 'career_path',
+        'as'   => 'career_path',
         'uses' => 'PagesController@career']
 );
 

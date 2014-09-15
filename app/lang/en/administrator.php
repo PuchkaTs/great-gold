@@ -15,4 +15,5 @@ return array(
     'projectTitle' => 'Project',
     'imageTitle' => 'Image',
     'tagTitle' => 'Project Tag',
+    'careerTitle' => 'Career',
 );

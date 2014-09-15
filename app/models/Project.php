@@ -21,6 +21,6 @@ class Project extends Eloquent {
 
     public function tags()
     {
-        return $this->belongsToMany('tag');
+        return $this->belongsToMany('Tag');
     }
 }

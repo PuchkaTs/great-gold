@@ -25,7 +25,7 @@ if (App::getLocale() == 'en')
             ),
             'image' => array(
                 'title' => 'Image',
-                'output' => '<img src="/uploads/banner/(:value)" height="100" />',
+                'output' => '<img src="/uploads/banner/thumbs/(:value)" height="100" />',
             )
         ),
 
@@ -108,7 +108,7 @@ if (App::getLocale() == 'en')
             ),
             'image' => array(
                 'title' => 'Зураг',
-                'output' => '<img src="/uploads/banner/(:value)" height="100" />',
+                'output' => '<img src="/uploads/banner/thumbs/(:value)" height="100" />',
             )
         ),
 

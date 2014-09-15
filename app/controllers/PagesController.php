@@ -3,6 +3,7 @@
 class PagesController extends \BaseController {
 
     private $banners = false;
+
     function __construct()
     {
 
@@ -56,8 +57,26 @@ class PagesController extends \BaseController {
     {
         $banners = $this->banners;
 
-        return View::make('pages.career')->with(compact('banners'));
+        $career = Career::all();
+
+        $body = 'body goes here';
+        $header = 'Header goes here';
+        if ($content = Content::whereTag('Career')->first())
+        {
+            if (app::getLocale() == 'en')
+            {
+                $body = $content->body_en;
+                $header = $content->header_en;
+            } else
+            {
+                $body = $content->body_mn;
+                $header = $content->header_mn;
+            }
+        }
+
+        return View::make('pages.career')->with(compact('banners', 'career', 'body', 'header'));
     }
+
     /**
      * Serice page
      */
@@ -125,10 +144,25 @@ class PagesController extends \BaseController {
     /**
      * show projects
      * @return mixed
+     *         $userIds = $user->follows()->lists('followed_id');
+
+    $userIds[] = $user->id;
+
+    return Status::whereIn('user_id', $userIds)->latest()->get();
      */
     public function show_projects()
     {
-        $projects = Project::whereType('project')->with('tags')->get();
+        $input = urldecode(Input::get('tag'));
+        $tagId = DB::table('tags')->where('tag_en', '=' , $input)->pluck('id');
+        $projectIds = DB::table('project_tag')->where('tag_id', '=', $tagId)->lists('project_id');
+
+        if (isset($tagId))
+        {
+            $projects = Project::whereIn('id', $projectIds)->get();
+        } else
+        {
+            $projects = Project::whereType('project')->with('tags')->get();
+        }
 
         return View::make('pages.projects')->withProjects($projects);
     }

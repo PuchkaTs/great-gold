@@ -14,4 +14,5 @@
     'projectTitle' => 'Төсөл',
     'imageTitle' => 'Зураг',
     'tagTitle' => 'Төслийн Таг',
+    'careerTitle' => 'Ажлын байр',
 );

@@ -6,8 +6,8 @@
     <title>@yield('meta-title', 'Great Gold Star Construction')</title>
     <meta name="description" content="Web design, development, product branding, marketing firm">
     <meta name="author" content="AirKreativ">
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/css/css_uikit/uikit.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto:300&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="stylesheet" type="text/css" href="/css/image_css/style1.css">
