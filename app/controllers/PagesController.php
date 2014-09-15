@@ -195,7 +195,16 @@ class PagesController extends \BaseController {
     {
         $projects = Project::whereType('news')->get();
 
-        return View::make('pages.news')->withProjects($projects);
+        $designTag = Tag::where('tag_en', '=', 'design')->with('projects')->first();
+        $foundationTag = Tag::where('tag_en', '=', 'foundation')->with('projects')->first();
+        $structureTag = Tag::where('tag_en', '=', 'structure')->with('projects')->first();
+        $curtainTag = Tag::where('tag_en', '=', 'curtain wall')->with('projects')->first();
+        $designCount = $designTag->projects()->count();
+        $foundationCount = $foundationTag->projects()->count();
+        $structureCount = $structureTag->projects()->count();
+        $curtainCount = $curtainTag->projects()->count();
+
+        return View::make('pages.news')->with(compact('projects', 'designCount', 'foundationCount', 'structureCount', 'curtainCount'));
     }
 
     public function show_news_by_id($id)
