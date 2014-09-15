@@ -145,15 +145,17 @@ class PagesController extends \BaseController {
      * show projects
      * @return mixed
      *         $userIds = $user->follows()->lists('followed_id');
-
-    $userIds[] = $user->id;
-
-    return Status::whereIn('user_id', $userIds)->latest()->get();
+     *
+     * $userIds[] = $user->id;
+     *
+     * return Status::whereIn('user_id', $userIds)->latest()->get();
      */
     public function show_projects()
     {
+
+
         $input = urldecode(Input::get('tag'));
-        $tagId = DB::table('tags')->where('tag_en', '=' , $input)->pluck('id');
+        $tagId = DB::table('tags')->where('tag_en', '=', $input)->pluck('id');
         $projectIds = DB::table('project_tag')->where('tag_id', '=', $tagId)->lists('project_id');
 
         if (isset($tagId))
@@ -164,7 +166,17 @@ class PagesController extends \BaseController {
             $projects = Project::whereType('project')->with('tags')->get();
         }
 
-        return View::make('pages.projects')->withProjects($projects);
+//       numbers for sidebar
+        $designTag = Tag::where('tag_en', '=', 'design')->with('projects')->first();
+        $foundationTag = Tag::where('tag_en', '=', 'foundation')->with('projects')->first();
+        $structureTag = Tag::where('tag_en', '=', 'structure')->with('projects')->first();
+        $curtainTag = Tag::where('tag_en', '=', 'curtain wall')->with('projects')->first();
+        $designCount = $designTag->projects()->count();
+        $foundationCount = $foundationTag->projects()->count();
+        $structureCount = $structureTag->projects()->count();
+        $curtainCount = $curtainTag->projects()->count();
+
+        return View::make('pages.projects')->with(compact('projects', 'designCount', 'foundationCount', 'structureCount', 'curtainCount'));
     }
 
     public function show_project_by_id($id)
