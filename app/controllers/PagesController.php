@@ -158,7 +158,7 @@ class PagesController extends \BaseController {
         $tagId = DB::table('tags')->where('tag_en', '=', $input)->pluck('id');
         $projectIds = DB::table('project_tag')->where('tag_id', '=', $tagId)->lists('project_id');
 
-        if (isset($tagId))
+        if (isset($tagId) & ! empty($projectIds))
         {
             $projects = Project::whereIn('id', $projectIds)->get();
         } else
