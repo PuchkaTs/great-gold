@@ -182,9 +182,18 @@ class PagesController extends \BaseController {
     public function show_project_by_id($id)
     {
 
+        $designTag = Tag::where('tag_en', '=', 'design')->with('projects')->first();
+        $foundationTag = Tag::where('tag_en', '=', 'foundation')->with('projects')->first();
+        $structureTag = Tag::where('tag_en', '=', 'structure')->with('projects')->first();
+        $curtainTag = Tag::where('tag_en', '=', 'curtain wall')->with('projects')->first();
+        $designCount = $designTag->projects()->count();
+        $foundationCount = $foundationTag->projects()->count();
+        $structureCount = $structureTag->projects()->count();
+        $curtainCount = $curtainTag->projects()->count();
         $project = Project::find($id);
 
-        return View::make('pages.project')->withProject($project);
+
+        return View::make('pages.project')->with(compact('project', 'designCount', 'foundationCount', 'structureCount', 'curtainCount'));
     }
 
     /**
@@ -210,9 +219,17 @@ class PagesController extends \BaseController {
     public function show_news_by_id($id)
     {
 
+        $designTag = Tag::where('tag_en', '=', 'design')->with('projects')->first();
+        $foundationTag = Tag::where('tag_en', '=', 'foundation')->with('projects')->first();
+        $structureTag = Tag::where('tag_en', '=', 'structure')->with('projects')->first();
+        $curtainTag = Tag::where('tag_en', '=', 'curtain wall')->with('projects')->first();
+        $designCount = $designTag->projects()->count();
+        $foundationCount = $foundationTag->projects()->count();
+        $structureCount = $structureTag->projects()->count();
+        $curtainCount = $curtainTag->projects()->count();
         $project = Project::find($id);
 
-        return View::make('pages.newsId')->withProject($project);
+        return View::make('pages.newsId')->with(compact('project', 'designCount', 'foundationCount', 'structureCount', 'curtainCount'));
     }
 
 
