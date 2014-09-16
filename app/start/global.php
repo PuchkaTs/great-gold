@@ -83,3 +83,9 @@ App::down(function()
 */
 
 require app_path().'/filters.php';
+
+if ( ! Request::is('admin/*'))
+{
+    App::setLocale(Session::get('hey.locale', Config::get('app.locale')));
+}
+

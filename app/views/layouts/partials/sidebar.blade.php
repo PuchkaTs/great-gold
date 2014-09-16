@@ -2,12 +2,12 @@
     <aside>
         <div class="hidden-sm hidden-xs" style="height: 149px"></div>
         <article>
-            <h3><span class="glyphicon glyphicon-th-list"></span>Search by Categories</h3>
+            <h3><span class="glyphicon glyphicon-th-list"></span>{{ trans('main.search') }}</h3>
             <div class="list-group">
-                <a href="{{ URL::route('projects') . '?tag=Design' }} " class="list-group-item"> <span class="badge">{{ $designCount }} </span> Design</a>
-                <a href="{{ URL::route('projects') . '?tag=Foundation' }} " class="list-group-item"> <span class="badge">{{ $foundationCount }}</span> Foundation</a>
-                <a href="{{ URL::route('projects') . '?tag=Structure' }} " class="list-group-item"> <span class="badge">{{ $structureCount }}</span> Structure</a>
-                <a href="{{ URL::route('projects') . '?tag=' . urlencode('Curtain wall')}} " class="list-group-item"> <span class="badge">{{ $curtainCount }}</span> Curtain wall</a>
+                <a href="{{ URL::route('projects') . '?tag=Design' }} " class="list-group-item"> <span class="badge">{{ $designCount }} </span>{{ trans('main.design') }}</a>
+                <a href="{{ URL::route('projects') . '?tag=Foundation' }} " class="list-group-item"> <span class="badge">{{ $foundationCount }}</span> {{ trans('main.foundation') }}</a>
+                <a href="{{ URL::route('projects') . '?tag=Structure' }} " class="list-group-item"> <span class="badge">{{ $structureCount }}</span> {{ trans('main.structure') }}</a>
+                <a href="{{ URL::route('projects') . '?tag=' . urlencode('Curtain wall')}} " class="list-group-item"> <span class="badge">{{ $curtainCount }}</span> {{ trans('main.curtainWall') }}</a>
             </div>
         </article>
     </aside>

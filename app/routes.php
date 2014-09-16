@@ -92,6 +92,20 @@ Route::get('logout', [
 ]);
 
 /**
+ * Change language
+ */
+Route::get('lang', function(){
+        if ( App::getLocale() == 'en')
+        {
+            Session::put('hey.locale', 'mn');
+            return Redirect::back();
+        }
+        Session::put('hey.locale', 'en');
+        return Redirect::back();
+
+});
+
+/**
  * Google maps
  */
 Route::get('/map', function ()

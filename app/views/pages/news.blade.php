@@ -5,8 +5,8 @@
 <div class="row" id="projects" style="min-height: 700px">
     <div class="col-md-8 col-lg-6 col-lg-offset-2">
         <header>
-            <h1>News</h1>
-            <p>Enjoy our latest news</p>
+            <h1>{{ trans('main.news') }}</h1>
+            <p>{{ trans('main.newsDescription') }}</p>
         </header>
 
         @foreach($projects as $project)

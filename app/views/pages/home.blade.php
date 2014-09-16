@@ -21,7 +21,7 @@
         <article>
             <div class="row">
                 <div class="">
-                    <h1 style="text-align: center">Latest projects</h1>
+                    <h1 style="text-align: center">{{ trans('main.latestProjects') }}</h1>
 
                     <div class="main row uk-scrollspy-init-inview uk-scrollspy-inview uk-animation-fade"
                          data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true}">
@@ -34,7 +34,7 @@
                                     <div class="mask">
                                         <h2>{{ $project->title_en }}</h2>
                                         <p>{{ $project->shorten(100) }}</p>
-                                        {{ link_to_route('project_path', 'Read more', $project->id, ['class' => 'info'])}}
+                                        {{ link_to_route('project_path', trans('main.readMore'), $project->id, ['class' => 'info'])}}
                                     </div>
                                 </div>
                             @endforeach
@@ -48,7 +48,7 @@
             <div class="row " id="tweet">
                 <div class="col-md-8 col-md-offset-2 uk-scrollspy-inview"
                      data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true}" >
-                    <h1 style="text-align: center">@Great Gold Star</h1>
+                    <h1 style="text-align: center">{{ trans('main.@greatGoldStar') }}</h1>
                     <div id="slideshow">
                         <ul>
                             <li class="next row">
