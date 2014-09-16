@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1389f84b-a26a-42db-b53a-93700ea4f3ff" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/lang/en/main.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/lang/mn/main.php" />
       <change type="DELETED" beforePath="C:\Users\puje\great-gold\public\FAV.png" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\puje\great-gold\public\favicon.ico" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\puje\great-gold\public\logo.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/SessionController.php" afterPath="$PROJECT_DIR$/app/controllers/SessionController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/packages/frozennode/administrator/administrator.php" afterPath="$PROJECT_DIR$/app/config/packages/frozennode/administrator/administrator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/partials/contactForm.blade.php" afterPath="$PROJECT_DIR$/app/views/layouts/partials/contactForm.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/start/global.php" afterPath="$PROJECT_DIR$/app/start/global.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/home.blade.php" afterPath="$PROJECT_DIR$/app/views/pages/home.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/partials/nav.blade.php" afterPath="$PROJECT_DIR$/app/views/layouts/partials/nav.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/news.blade.php" afterPath="$PROJECT_DIR$/app/views/pages/news.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/partials/sidebar.blade.php" afterPath="$PROJECT_DIR$/app/views/layouts/partials/sidebar.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/career.blade.php" afterPath="$PROJECT_DIR$/app/views/pages/career.blade.php" />
     </list>
     <ignored path="great-gold.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,17 +51,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="23" column="55" selection-start="750" selection-end="750" vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="2296">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="news.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/pages/news.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="16" selection-start="197" selection-end="221" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1260">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -183,7 +161,6 @@
         <option value="$PROJECT_DIR$/app/lang/en/administrator.php" />
         <option value="$PROJECT_DIR$/app/lang/mn/administrator.php" />
         <option value="$PROJECT_DIR$/app/config/administrator/banners.php" />
-        <option value="$PROJECT_DIR$/app/views/pages/career.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/PagesController.php" />
         <option value="$PROJECT_DIR$/app/views/layouts/partials/contactForm.blade.php" />
         <option value="$PROJECT_DIR$/app/views/pages/home.blade.php" />
@@ -197,6 +174,7 @@
         <option value="$PROJECT_DIR$/app/start/global.php" />
         <option value="$PROJECT_DIR$/app/config/packages/frozennode/administrator/administrator.php" />
         <option value="$PROJECT_DIR$/bootstrap/start.php" />
+        <option value="$PROJECT_DIR$/app/views/pages/career.blade.php" />
       </list>
     </option>
   </component>
@@ -625,11 +603,6 @@
         <state line="25" column="1" selection-start="473" selection-end="473" vertical-scroll-proportion="0.7135576" vertical-offset="0" max-vertical-offset="981" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pages/career.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="24" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1064" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pages/services/foundation.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1148" />
@@ -767,6 +740,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="59" column="10" selection-start="1864" selection-end="1864" vertical-scroll-proportion="0.0" vertical-offset="1260" max-vertical-offset="4116">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pages/career.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="62" selection-start="1137" selection-end="1137" vertical-scroll-proportion="0.63076925" vertical-offset="154" max-vertical-offset="1064">
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#article#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#article#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
