@@ -1,4 +1,7 @@
 @extends('layouts/default_min')
+@section('css')
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+@stop
 
 @section('content')
 
@@ -51,14 +54,25 @@
                     <h1 style="text-align: center">{{ trans('main.@greatGoldStar') }}</h1>
                     <div id="slideshow">
                         <ul>
-                            <li class="next row">
-                                <div class="col-md-4 col-sm-12"><img src="images/1.jpg" class="img-circle" style="height: 100px; width: 100px;"><p>CEO MR Yokazuna</p></div>
-                                <div class="status col-md-8 col-sm-12"><h3>"Great Company. I like it. Lorem ipsum yoo"</h3></div>
-                            </li>
-                            <li class="row">
-                                <div class="col-md-4"><img src="images/1.jpg" class="img-circle" style="height: 100px; width: 100px;"><p>CEO MR Kowasaka</p></div>
-                                <div class="status col-md-8"><h3>"Yes yes. Great Company. I like it too. Lorem ipsum yoo"</h3></div>
-                            </li>
+                            @if($gtweets->count())
+                                @foreach($gtweets as $index => $gtweet)
+                                    @if($index == 0)
+                                        <li class="next row">
+                                            <div class="col-md-4 col-sm-12"><img src="uploads/tweets/{{ $gtweet->image }}" class="img-circle" style="height: 100px; width: 100px;">
+                                                <p style="text-align: center;">{{ (App::getLocale() == 'en') ? $gtweet->title_en : $gtweet->title_mn  }}</p>
+                                            </div>
+                                            <div class="status col-md-8 col-sm-12"><h3><i class="fa fa-quote-left">&nbsp;</i>{{ (App::getLocale() == 'en') ? $gtweet->status_en : $gtweet->status_mn  }}&nbsp;<i class="fa fa-quote-right"></i></h3></div>
+                                        </li>
+                                    @else
+                                        <li class="row">
+                                            <div class="col-md-4 col-sm-12"><img src="uploads/tweets/{{ $gtweet->image }}" class="img-circle" style="height: 100px; width: 100px;">
+                                                <p style="text-align: center;">{{ (App::getLocale() == 'en') ? $gtweet->title_en : $gtweet->title_mn  }}</p>
+                                            </div>
+                                            <div class="status col-md-8 col-sm-12"><h3><i class="fa fa-quote-left">&nbsp;</i>{{ (App::getLocale() == 'en') ? $gtweet->status_en : $gtweet->status_mn  }}&nbsp;<i class="fa fa-quote-right"></i></h3></div>
+                                        </li>
+                                    @endif
+                                @endforeach
+                            @endif
 
 
                         </ul>

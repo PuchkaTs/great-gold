@@ -24,6 +24,7 @@ class PagesController extends \BaseController {
      */
     public function home()
     {
+        $gtweets = Gtweet::all();
         $banners = $this->banners;
         $howMany = Project::get()->count();
         if ($howMany > 4)
@@ -46,7 +47,7 @@ class PagesController extends \BaseController {
             }
         }
 
-        return View::make('pages.home')->with(compact('body', 'header', 'projects', 'banners'));
+        return View::make('pages.home')->with(compact('body', 'header', 'projects', 'banners', 'gtweets'));
     }
 
     /**

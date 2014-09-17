@@ -57,7 +57,8 @@ return array(
         'menu',
         'banners',
         'Posts'=>['projects', 'images', 'tags'],
-        'career'
+        'career',
+        'gtweets',
     ),
 
 	/**

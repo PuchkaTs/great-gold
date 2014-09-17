@@ -16,4 +16,5 @@ return array(
     'imageTitle' => 'Image',
     'tagTitle' => 'Project Tag',
     'careerTitle' => 'Career',
+    'gtweetTitle' => 'Tweet',
 );
