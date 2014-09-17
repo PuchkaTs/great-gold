@@ -1,10 +1,13 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <title>Great Gold Star Construction</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('meta-title', 'Great Gold Star Construction')</title>
     <meta name="description" content="Great Gold Star Construction company. Building design, structure, foundation, curtain wall services">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="Great Gold Star Construction">
+    <meta property="og:title" content="Great Gold Star Construction">
+    <meta property="og:description" content="Great Gold Star Construction company. Building design, structure, foundation, curtain wall services">
     <meta name="author" content="AirKreativ">
     <link rel="stylesheet" type="text/css" href="/css/css_uikit/uikit.min.css">
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
