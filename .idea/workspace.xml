@@ -5,9 +5,7 @@
       <change type="DELETED" beforePath="C:\Users\puje\great-gold\public\FAV.png" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\puje\great-gold\public\favicon.ico" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\puje\great-gold\public\logo.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/default_min.blade.php" afterPath="$PROJECT_DIR$/app/views/layouts/default_min.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/partials/footer.blade.php" afterPath="$PROJECT_DIR$/app/views/layouts/partials/footer.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="great-gold.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,7 +76,7 @@
       <file leaf-file-name="start.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bootstrap/start.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="39" selection-start="947" selection-end="947" vertical-scroll-proportion="0.5635593" vertical-offset="0" max-vertical-offset="1960">
+            <state line="20" column="7" selection-start="657" selection-end="657" vertical-scroll-proportion="0.32627118" vertical-offset="0" max-vertical-offset="1960">
               <folding />
             </state>
           </provider>
@@ -105,7 +103,7 @@
       <file leaf-file-name="footer.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/partials/footer.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="904" selection-end="904" vertical-scroll-proportion="0.0" vertical-offset="336" max-vertical-offset="1316">
+            <state line="35" column="14" selection-start="1347" selection-end="1347" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1288">
               <folding />
             </state>
           </provider>
@@ -595,13 +593,6 @@
         <state line="5" column="2" selection-start="138" selection-end="204" vertical-scroll-proportion="0.14507772" vertical-offset="0" max-vertical-offset="965" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pages/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="34" selection-start="4421" selection-end="4421" vertical-scroll-proportion="0.0" vertical-offset="1428" max-vertical-offset="2688">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/partials/nav.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="25" selection-start="1843" selection-end="1843" vertical-scroll-proportion="0.5488722" vertical-offset="217" max-vertical-offset="1148">
@@ -623,16 +614,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pages/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="34" selection-start="4421" selection-end="4421" vertical-scroll-proportion="0.0" vertical-offset="1428" max-vertical-offset="2688">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/partials/footer.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="904" selection-end="904" vertical-scroll-proportion="0.0" vertical-offset="336" max-vertical-offset="1316">
+        <state line="35" column="14" selection-start="1347" selection-end="1347" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1288">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap/start.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="39" selection-start="947" selection-end="947" vertical-scroll-proportion="0.5635593" vertical-offset="0" max-vertical-offset="1960">
+        <state line="20" column="7" selection-start="657" selection-end="657" vertical-scroll-proportion="0.32627118" vertical-offset="0" max-vertical-offset="1960">
           <folding />
         </state>
       </provider>
