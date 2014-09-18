@@ -16,4 +16,5 @@
     'tagTitle' => 'Төслийн Таг',
     'careerTitle' => 'Ажлын байр',
     'gtweetTitle' => 'Твит',
+    'messageTitle' => 'Мессэж',
 );

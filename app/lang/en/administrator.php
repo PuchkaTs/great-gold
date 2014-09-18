@@ -17,4 +17,5 @@ return array(
     'tagTitle' => 'Project Tag',
     'careerTitle' => 'Career',
     'gtweetTitle' => 'Tweet',
+    'messageTitle' => 'Message',
 );

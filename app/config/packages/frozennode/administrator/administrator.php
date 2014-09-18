@@ -59,6 +59,7 @@ return array(
         'Posts'=>['projects', 'images', 'tags'],
         'career',
         'gtweets',
+        'messages',
     ),
 
 	/**
