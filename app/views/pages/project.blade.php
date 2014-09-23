@@ -7,7 +7,7 @@
             <div class="col-md-12" id="project_by_id">
                     <div class="flexslider">
                         <ul class="slides">
-                            @foreach($project->image as $image)
+                            @foreach($project->image()->orderBy('position', 'asc')->get() as $image)
                             <li>
                                 {{ HTML::image("uploads/projects/$image->image") }}
                             </li>

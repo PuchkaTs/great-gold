@@ -550,7 +550,7 @@ footer a{
 }
 
 p{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', 'Lato', sans-serif;
     font-weight: 100;
 }
 /* Aside */
@@ -575,7 +575,7 @@ aside article {
     border-bottom-left-radius: 0px;
 }
 .glyphicon {
-    font-size: 20px;
+    font-size: 15px;
     margin-right: 5px;
     color: #A3A5D1;
     color: #009ddc;
@@ -608,5 +608,11 @@ textarea.form-control:focus{
 
     ::-webkit-scrollbar-thumb {
         background: #009ddc;
+    }
+}
+@media only screen and (max-width: 991px) {
+    aside article {
+        margin: 20px 15px;
+        margin-top: 50px;
     }
 }

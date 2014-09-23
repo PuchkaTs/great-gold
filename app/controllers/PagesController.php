@@ -9,7 +9,7 @@ class PagesController extends \BaseController {
 
         if (Menu::whereSlug(Request::path())->count())
         {
-            $this->banners = Menu::whereSlug(Request::path())->first()->banner;
+            $this->banners = Menu::whereSlug(Request::path())->first()->banner()->orderBy('position', 'asc')->get();
         } else
         {
             $this->banners = false;
@@ -161,10 +161,10 @@ class PagesController extends \BaseController {
 
         if (isset($tagId) & ! empty($projectIds))
         {
-            $projects = Project::whereIn('id', $projectIds)->get();
+            $projects = Project::whereIn('id', $projectIds)->orderBy('created_at', 'des')->get();
         } else
         {
-            $projects = Project::whereType('project')->with('tags')->get();
+            $projects = Project::whereType('project')->with('tags')->orderBy('created_at', 'des')->get();
         }
 
 //       numbers for sidebar
@@ -203,7 +203,7 @@ class PagesController extends \BaseController {
      */
     public function show_news()
     {
-        $projects = Project::whereType('news')->get();
+        $projects = Project::whereType('news')->orderBy('created_at', 'des')->get();
 
         $designTag = Tag::where('tag_en', '=', 'design')->with('projects')->first();
         $foundationTag = Tag::where('tag_en', '=', 'foundation')->with('projects')->first();
