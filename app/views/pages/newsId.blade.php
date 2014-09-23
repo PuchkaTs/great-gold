@@ -4,6 +4,11 @@
 
 <div class="row" id="projects" style="min-height: 500px">
     <div class="col-md-8 col-lg-6 col-lg-offset-2">
+        <header>
+            <h1>{{ trans('main.news') }}</h1>
+            <p>{{ $project->title_en }}</p>
+        </header>
+
             <div class="col-md-12" id="project_by_id">
                     <div class="flexslider">
                         <ul class="slides">
