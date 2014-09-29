@@ -19,7 +19,7 @@ i.fa {
     color: rgba(255,255,255,0.5);
 }
 .footer {
-    font-family: 'Open Sans', sans-serif;
+    /*font-family: 'Open Sans', sans-serif;*/
     width: 100%;
     border-top: 1px solid #e7e7e7;
     -webkit-moz-border-top: 1px solid #e7e7e7;;
@@ -328,18 +328,19 @@ img.displayed {
 
 }
 
-#slideshow ul img {
+.img-circle {
     margin-left:auto;
     margin-right: auto;
     border: 5px solid #fefefe;
 }
-#slideshow p {
+#title {
    margin-top: 20px;
 }
 
 
 #slideshow li {
-    text-align: center;
+    list-style: none;
+    /*text-align: center;*/
     position: absolute;
     margin-top: 30px;
     opacity: 0.0;
@@ -462,7 +463,7 @@ article h1 {
     }
 
     #tweet {
-        height: 250px;
+        height: 130px;
     }
     .status {
         text-align: left;
@@ -549,7 +550,7 @@ footer a{
 }
 
 p{
-    font-family: 'Open Sans', 'Lato', sans-serif;
+    /*font-family: 'Open Sans', 'Lato', sans-serif;*/
     font-weight: 100;
 }
 /* Aside */
@@ -612,6 +613,30 @@ textarea.form-control:focus{
 @media only screen and (max-width: 991px) {
     aside article {
         margin: 20px 15px;
-        margin-top: 50px;
+        margin-top: 20px;
     }
 }
+
+#logos{
+    margin: 10px auto;
+    text-align: center;
+}
+#logos img{
+    height: 40px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.quick-access p i{
+    border: 1px solid #009ddc; width: 24px; height: 24px; text-align: center; padding-top: 5px; margin-right: 7px; color: #009ddc;
+}
+
+
+.quick-access p i:hover{
+    background-color: #009ddc;
+    border-color: #009ddc;
+    color: white;
+}
+
+

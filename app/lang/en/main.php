@@ -33,7 +33,11 @@ return array(
 
     "latestProjects" => "Latest projects",
 
-    "@greatGoldStar" => "@GreatGoldStar",
+    "@greatGoldStar" => "Chairman message",
+
+    "lihailong" => "Li Hai Long",
+
+    "clients" => "Premium clients",
 
     "getInTouch" => "Get in touch",
 

@@ -26,25 +26,70 @@
             {{ Form::close() }}
         </div>
     </div>
-<div>
-    <style>
-        .bizmail_loginpanel{font-size:12px;width:300px;height:auto;border:1px solid #cccccc;background:#ffffff; margin: 50px auto;}
-        .bizmail_LoginBox{padding:10px 15px;}
-        .bizmail_loginpanel h3{padding-bottom:5px;margin:0 0 5px 0;border-bottom:1px solid #cccccc;font-size:14px;}
-        .bizmail_loginpanel form{margin:0;padding:0;}
-        .bizmail_loginpanel input.text{font-size:12px;width:100px;height:20px;margin:0 2px;border:1px solid #C3C3C3;border-color:#7C7C7C #C3C3C3 #C3C3C3 #9A9A9A;}
-        .bizmail_loginpanel .bizmail_column{height:28px;}
-        .bizmail_loginpanel .bizmail_column label{display:block;float:left;width:30px;height:24px;line-height:24px;font-size:12px;}
-        .bizmail_loginpanel .bizmail_column .bizmail_inputArea{float:left;width:240px;}
-        .bizmail_loginpanel .bizmail_column span{font-size:12px;word-wrap:break-word;margin-left: 2px;line-height:200%;}
-        .bizmail_loginpanel .bizmail_SubmitArea{margin-left:30px;clear:both; padding-top: 20px;}
-        .bizmail_loginpanel .bizmail_SubmitArea a{font-size:12px;margin-left:5px;}
-        .bizmail_loginpanel select{width:110px;height:20px;margin:0 2px;}
-    </style>
-    <script type="text/javascript" src="http://exmail.qq.com/zh_CN/htmledition/js_biz/outerlogin.js"  charset="gb18030"></script>
-    <script type="text/javascript">
-        writeLoginPanel({domainlist:"greatgoldstar.com", mode:"vertical"});
-    </script>
+
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <style>
+            /*.bizmail_loginpanel{font-size:12px;width:300px;height:auto;border:1px solid #cccccc;background:#ffffff; margin: 50px auto;}*/
+            .bizmail_LoginBox{padding:10px 0px; margin-top: 30px;}
+            .bizmail_loginpanel h3{padding-bottom:5px;margin:0 0 5px 0;border-bottom:1px solid #cccccc;font-size:14px;}
+            .bizmail_loginpanel form{margin:0;padding:0;}
+            .bizmail_SubmitArea input{
+                display: inline-block;
+                padding: 6px 12px;
+                margin-bottom: 0;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 1.42857143;
+                text-align: center;
+                white-space: nowrap;
+                vertical-align: middle;
+                cursor: pointer;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                background-image: none;
+                border: 1px solid transparent;
+                border-radius: 4px;
+                background-color: #009ddc;
+            }
+            .bizmail_SubmitArea input:hover{
+                background-color: #0490C9;
+                border-color: #0490C9;
+                border-width: 0px;
+            }
+            .bizmail_loginpanel input.text{
+                display: block;
+                width: 100%;
+                height: 34px;
+                padding: 6px 12px;
+                font-size: 14px;
+                line-height: 1.42857143;
+                color: #555;
+                background-color: #fff;
+                background-image: none;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+                -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+                transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+            }
+            .bizmail_loginpanel .bizmail_column{}
+            .bizmail_loginpanel .bizmail_column label{}
+            .bizmail_loginpanel .bizmail_column .bizmail_inputArea{}
+            .bizmail_loginpanel .bizmail_column span{}
+            .bizmail_loginpanel .bizmail_SubmitArea{clear:both; padding-top: 20px;}
+            .bizmail_loginpanel .bizmail_SubmitArea a{font-size:12px;margin-left:5px;}
+            .bizmail_loginpanel select{width:110px;height:20px;margin:0 2px;}
+        </style>
+        <script type="text/javascript" src="http://exmail.qq.com/zh_CN/htmledition/js_biz/outerlogin.js"  charset="gb18030"></script>
+        <script type="text/javascript">
+            writeLoginPanel({domainlist:"greatgoldstar.com", mode:"vertical"});
+        </script>
+    </div>
 </div>
 
 <!--    place holder-->

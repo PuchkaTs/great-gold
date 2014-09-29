@@ -25,13 +25,13 @@
             <p> mobile: +976-9907-7729 </p>
         </div>
 
-        <div class="col-md-3 col-xs-offset-1">
+        <div class="col-md-3 col-xs-offset-1 quick-access">
             <h4><span class="glyphicon glyphicon-envelope"></span> Stay connected.</h4>
-
-            <p class="street-address">@Marketing</p>
-
-            <p> email: <a href="mailto:Hello@greatgoldstar.com">Hello@greatgoldstar.com</a>
-                <br>email: <a href="mailto:Marketing@greatgoldstar.com">Marketing@greatgoldstar.com</a>
+            <p> email: <a href="mailto:Hello@greatgoldstar.com">Hello@greatgoldstar.com</a></p>
+            <br>
+            <p><a href="http://facebook.com"><i class="fa fa-facebook"></i></a>
+                <a href="http://twitter.com"><i class="fa fa-twitter"></i></a>
+                <a href="http://twitter.com"><i class="fa fa-linkedin"></i></a>
             </p>
         </div>
 

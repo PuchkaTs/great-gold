@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="/css/css_uikit/uikit.min.css">
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto:300&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="stylesheet" type="text/css" href="/css/image_css/style1.css">
     <link rel="stylesheet" type="text/css" href="/css/image_css/style_common.css">

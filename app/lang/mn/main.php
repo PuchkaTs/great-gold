@@ -33,7 +33,11 @@ return array(
 
 	"latestProjects" => "Зарим төслүүд",
 
-    "@greatGoldStar" => "@Грийт Гоулд Стар",
+    "@greatGoldStar" => "Ерөнхий захирлын үг",
+
+    "lihailong" => "Ли Хай Лонг",
+
+    "clients" => "Захиалагчид",
 
     "getInTouch" => "Бидэнтэй холбоо барих",
 
