@@ -53,6 +53,8 @@ return array(
 
     "readMore" => "Дэлгэрэнгүй",
 
+    "password" => "Нууц үг",
+
     /**
      * news page
      */
@@ -60,6 +62,16 @@ return array(
     "news" => "Мэдээлэл",
 
     "newsDescription" => "Сүүлийн үеийн мэдээлэл",
+
+    /**
+     * login page
+     */
+
+    "Admin" => "Админ",
+
+    "Email" => "Имэйл",
+
+    "SignIn" => "Нэвтрэх",
 
     /**
      * Sidebar

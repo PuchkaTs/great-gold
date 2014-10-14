@@ -638,4 +638,35 @@ textarea.form-control:focus{
     color: white;
 }
 
+/*tabs*/
+
+.nav-tabs>li>a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 0px;
+}
+
+a:hover, a:focus {
+    color: black;
+    text-decoration: underline;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+    background-color: #009ddc;
+    color: #ffffff;
+}
+
+.tab-content{
+    border: 1px solid #ddd;
+    padding: 2em;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
 

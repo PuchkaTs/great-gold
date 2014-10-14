@@ -53,13 +53,27 @@ return array(
 
     "readMore" => "Read more",
 
+    "password" => "Password",
+
+
     /**
-     * News pagae
+     * News page
      */
 
     "news" => "News",
 
     "newsDescription" => "Our latest news",
+
+    /**
+     * login page
+     */
+
+    "Admin" => "Admin",
+
+    "Email" => "Email",
+
+    "SignIn" => "Sign In",
+
 
     /**
      * Sidebar

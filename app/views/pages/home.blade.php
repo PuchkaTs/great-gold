@@ -86,7 +86,7 @@
         <h1 style="text-align: center; margin-top: 50px; margin-bottom: 30px;">{{ trans('main.clients') }}</h1>
     <article class="twitters">
         <div id="logos">
-            @for ($i = 1; $i < 6; $i++)
+            @for ($i = 1; $i < 7; $i++)
             <img src="logos/{{ $i }}.png">
             @endfor
         </div>

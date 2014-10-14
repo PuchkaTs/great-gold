@@ -30,7 +30,7 @@
                 <li class="{{ Request::is('career') ? 'active' : '' }}"><a href="/career">{{ trans('main.career'); }}</a></li>
                 <li class="{{ Request::is('contact_us') ? 'active' : '' }}"><a href="/contact_us">{{ trans('main.contactUs'); }}</a></li>
                 <li class="{{ Request::is('login') ? 'active' : '' }}"><a href="/admin">{{ trans('main.login'); }}</a></li>
-                <li><a href="/lang">{{ (App::getLocale() == 'en') ? 'Mon' : 'Eng' }}</a></li>
+                <li><a href="/lang">{{ (App::getLocale() == 'en') ? 'Мон' : 'Eng' }}</a></li>
         </div>
     </div>
 </nav>
