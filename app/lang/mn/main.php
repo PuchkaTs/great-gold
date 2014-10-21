@@ -63,6 +63,11 @@ return array(
 
     "newsDescription" => "Сүүлийн үеийн мэдээлэл",
 
+
+    "ourProjects" => "Төсөл",
+
+    "ourProjectDescription" => "Бидний гүйцэтгэсэн төслүүд",
+
     /**
      * login page
      */

@@ -6,7 +6,7 @@
     <div class="col-md-8 col-lg-6 col-lg-offset-2">
         <header>
             <h1>{{ trans('main.news') }}</h1>
-            <p>{{ $project->title_en }}</p>
+            <p>{{ (App::getLocale() == 'en') ? $project->title_en : $project->title_mn }}</p>
         </header>
 
             <div class="col-md-12" id="project_by_id">
@@ -20,10 +20,10 @@
                         </ul>
                     </div>
                     <article>
-                        <h3>{{ $project->title_en }}</h3>
+                        <h3>{{ (App::getLocale() == 'en') ? $project->title_en : $project->title_mn }}</h3>
                         <div>
                             <p class="subdate">{{ $project->created_at->diffForHumans() }}</p>
-                            <p>{{ $project->body_en}}</p>
+                            <p>{{ (App::getLocale() == 'en') ? $project->body_en : $project->body_mn }}</p>
                         </div>
                     </article>
 

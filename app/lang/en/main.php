@@ -64,6 +64,10 @@ return array(
 
     "newsDescription" => "Our latest news",
 
+    "ourProjects" => "Our Projects",
+
+    "ourProjectDescription" => "Here is our projects showroom",
+
     /**
      * login page
      */

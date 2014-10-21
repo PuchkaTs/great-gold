@@ -7,8 +7,8 @@ class Project extends Eloquent {
 
 
     public function shorten($num = 250){
-
-        $string = strip_tags($this->body_en);
+        $body = (App::getLocale() == 'en') ? $this->body_en : $this->body_mn;
+        $string = strip_tags($body);
 
         $string = str_limit($string, $limit = $num, $end = '...');
 

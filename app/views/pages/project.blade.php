@@ -6,27 +6,28 @@
     <div class="col-md-8 col-lg-6 col-lg-offset-2">
         <header>
             <h1>{{ trans('main.projects') }}</h1>
-            <p>{{ $project->title_en }}</p>
+            <p>{{ (App::getLocale() == 'en') ? $project->title_en : $project->title_mn }}</p>
         </header>
-            <div class="col-md-12" id="project_by_id">
-                    <div class="flexslider">
-                        <ul class="slides">
-                            @foreach($project->image()->orderBy('position', 'asc')->get() as $image)
-                            <li>
-                                {{ HTML::image("uploads/projects/$image->image") }}
-                            </li>
-                            @endforeach
-                        </ul>
-                    </div>
-                    <article>
-                        <h3>{{ $project->title_en }}</h3>
-                        <div>
-                            <p class="subdate">{{ $project->created_at->diffForHumans() }}</p>
-                            <p>{{ $project->body_en}}</p>
-                        </div>
-                    </article>
 
+        <div class="col-md-12" id="project_by_id">
+            <div class="flexslider">
+                <ul class="slides">
+                    @foreach($project->image()->orderBy('position', 'asc')->get() as $image)
+                    <li>
+                        {{ HTML::image("uploads/projects/$image->image") }}
+                    </li>
+                    @endforeach
+                </ul>
             </div>
+            <article>
+                <h3>{{ (App::getLocale() == 'en') ? $project->title_en : $project->title_mn }}</h3>
+                <div>
+                    <p class="subdate">{{ $project->created_at->diffForHumans() }}</p>
+                    <p>{{ (App::getLocale() == 'en') ? $project->body_en : $project->body_mn }}</p>
+                </div>
+            </article>
+
+        </div>
     </div>
 
     @include('layouts.partials.sidebar')
