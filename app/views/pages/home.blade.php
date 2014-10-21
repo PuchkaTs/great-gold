@@ -64,21 +64,19 @@
                      data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true}">
                     @if($projects->count())
                     @foreach($projects as $index => $project)
-                    <a href="{{ route('project_path', $project->id)}}">
-                        <div class="view view-first">
 
-                            @if($project->image->count())
-                            {{ HTML::image("uploads/projects/300x200/" . $project->image->first()->image) }}
-                            @endif
-                            <div class="mask">
-                                <h2>{{ $project->title_en }}</h2>
+                    <div class="view view-first">
+                        @if($project->image->count())
+                        {{ HTML::image("uploads/projects/300x200/" . $project->image->first()->image) }}
+                        @endif
+                        <div class="mask">
+                            <h2>{{ $project->title_en }}</h2>
 
-    <!--                            <p>{{ $project->shorten(100) }}</p>-->
-    <!--                            {{ link_to_route('project_path', trans('main.readMore'), $project->id, ['class' =>-->
-    <!--                            'info'])}}-->
-                            </div>
+<!--                            <p>{{ $project->shorten(100) }}</p>-->
+                            {{ link_to_route('project_path', trans('main.readMore'), $project->id, ['class' =>
+                            'info'])}}
                         </div>
-                    </a>
+                    </div>
                     @endforeach
                     @endif
                 </div>
