@@ -71,7 +71,7 @@
                         <div class="mask">
                             <h2>{{ $project->title_en }}</h2>
 
-                            <p>{{ $project->shorten(100) }}</p>
+<!--                            <p>{{ $project->shorten(100) }}</p>-->
                             {{ link_to_route('project_path', trans('main.readMore'), $project->id, ['class' =>
                             'info'])}}
                         </div>
