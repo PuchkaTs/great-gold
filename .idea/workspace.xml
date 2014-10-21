@@ -40,8 +40,10 @@
       <file leaf-file-name="home.blade.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/pages/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="67" selection-start="3244" selection-end="3244" vertical-scroll-proportion="0.6279307" vertical-offset="1456" max-vertical-offset="2940">
-              <folding />
+            <state line="72" column="46" selection-start="3135" selection-end="3135" vertical-scroll-proportion="0.656473" vertical-offset="1372" max-vertical-offset="3024">
+              <folding>
+                <element signature="n#style#0;n#h1#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -754,8 +756,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pages/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="67" selection-start="3244" selection-end="3244" vertical-scroll-proportion="0.6279307" vertical-offset="1456" max-vertical-offset="2940">
-          <folding />
+        <state line="72" column="46" selection-start="3135" selection-end="3135" vertical-scroll-proportion="0.656473" vertical-offset="1372" max-vertical-offset="3024">
+          <folding>
+            <element signature="n#style#0;n#h1#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
