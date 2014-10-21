@@ -65,18 +65,19 @@
                     @if($projects->count())
                     @foreach($projects as $index => $project)
 
-                    <div class="view view-first">
-                        @if($project->image->count())
-                        {{ HTML::image("uploads/projects/300x200/" . $project->image->first()->image) }}
-                        @endif
-                        <div class="mask">
-                            <h2>{{ $project->title_en }}</h2>
+                        <div class="view view-first">
+                            <a href="{{ route('project_path', $project->id)}}">
+                                @if($project->image->count())
+                                {{ HTML::image("uploads/projects/300x200/" . $project->image->first()->image) }}
+                                @endif
+                                <div class="mask">
+                                    <h2>{{ (App::getLocale() == 'en') ? $project->title_en : $project->title_mn }}</h2>
 
-<!--                            <p>{{ $project->shorten(100) }}</p>-->
-                            {{ link_to_route('project_path', trans('main.readMore'), $project->id, ['class' =>
-                            'info'])}}
+
+                                </div>
+                            </a>
                         </div>
-                    </div>
+
                     @endforeach
                     @endif
                 </div>
