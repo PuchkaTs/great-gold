@@ -18,11 +18,9 @@
         <div class="col-md-3 col-xs-offset-1">
             <h4><span class="glyphicon glyphicon-earphone"></span> Want to talk?</h4>
 
-            <p> mobile: +976-8880-7711</p>
+            <p> mobile: +976-9518-1863</p>
 
-            <p> mobile: +976-9482-1983 </p>
-
-            <p> mobile: +976-9907-7729 </p>
+            <p> mobile: +976-9902-9760 </p>
         </div>
 
         <div class="col-md-3 col-xs-offset-1 quick-access">
